@@ -1,18 +1,31 @@
 <header id="woz-header">
   <div class="container">
-    <h1 class="site-title">
+      <h1 class="site-title">
         <a href="{{url_for('homepage') }}">Music </a>
       </h1>
-      <div id="login">
+      <div id="login-button">
         <a href="/login" class="btn btn-primary">Log in</a>
       </div>
-      <div id="loggedin">
-        <div id="user-profile">
-        </div>
-        <div id="oauth">
-        </div>
-        <button class="btn btn-default" id="obtain-new-token">Obtain new token using the refresh token</button>
+      <div id="login-vis" style="display:none">
+        <h5 id="hi-user-id" style="color: white">Hi {{user_id}}</h5>
       </div>
-
   </div>
+
+<script type="text/javascript">  
+function display(id){   
+  var traget=document.getElementById(id);   
+  if(traget.style.display=="none")  { 
+    traget.style.display="";  
+  }else{ 
+    traget.style.display="none";   
+  }   
+}
+var user_id = "{{user_id}}";
+console.log(user_id);
+if (user_id !== ""){
+  display('login-button');
+  display('login-vis');  
+}
+
+</script>  
 </header>

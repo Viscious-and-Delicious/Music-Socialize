@@ -7,6 +7,10 @@ body{
   margin-bottom: 2.4em;
 }
 
+h5#hi-user-id {
+  color: white;
+}
+
 #woz-content{
   min-height: 800px;
 }
@@ -29,6 +33,7 @@ header#woz-header h1{
   text-decoration: none;
   color: white;
 }
+
 
 
 

@@ -81,7 +81,7 @@ def callback():
 
     profile_data = json.loads(profile_response.text)
     print(profile_data)
-
+    user_id = profile_data["id"]
     # Get user playlist data
     playlist_api_endpoint = "{}/playlists".format(profile_data["href"])
     playlists_response = requests.get(playlist_api_endpoint, headers=authorization_header)
@@ -91,7 +91,7 @@ def callback():
     
     # Combine profile and playlist data to display
     display_arr = [profile_data] + playlist_data["items"]
-    return render_template("homepage.html",sorted_array=display_arr)
+    return render_template("homepage.html",sorted_array=display_arr, user_id=user_id)
 
 @app.route('/search/<name>')
 def search(name):
