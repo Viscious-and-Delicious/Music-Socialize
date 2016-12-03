@@ -5,8 +5,11 @@ import base64
 import urllib
 import json
 import spotify
+from flask_pymongo import PyMongo
+from bson.json_util import dumps
 
 app = Flask(__name__)
+mongo = PyMongo(app)
 
 #  Client Keys
 CLIENT_ID = "630b86f26d9e4839a970cc2057c7f5c5"
@@ -42,6 +45,8 @@ auth_query_parameters = {
 
 @app.route('/')
 def homepage():
+    print(mongo.db.test.find_one())
+    print(dumps(mongo.db.test.find({'x':10})))
     html = render_template('homepage.html')
     return html
 
@@ -129,11 +134,34 @@ def search(name):
     return html
 
 
-
-
 @app.route('/artist/<id>')
 def artist(id):
     artist = spotify.get_artist(id)
+
+    if artist['images']:
+        image_url = artist['images'][0]['url']
+    else:
+        image_url = 'http://placecage.com/600/400'
+
+    tracksdata = spotify.get_artist_top_tracks(id)
+    tracks = tracksdata['tracks']
+
+    artistsdata = spotify.get_related_artists(id)
+    relartists = artistsdata['artists']
+    html = render_template('artist.html',
+                            artist=artist,
+                            related_artists=relartists,
+                            image_url=image_url,
+                            tracks=tracks)
+    return html
+
+
+
+
+@app.route('/playlist/<id>')
+def playlist(id):
+    artist = spotify.get_artist(id)
+    playlists = spotify.get_user_playlists('zhch6639')
 
     if artist['images']:
         image_url = artist['images'][0]['url']
