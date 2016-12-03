@@ -9,6 +9,7 @@ from flask_pymongo import PyMongo
 from bson.json_util import dumps
 
 app = Flask(__name__)
+mongo = PyMongo(app)
 
 #  Client Keys
 CLIENT_ID = "630b86f26d9e4839a970cc2057c7f5c5"
@@ -45,7 +46,7 @@ auth_query_parameters = {
 @app.route('/')
 def homepage():
     print(mongo.db.test.find_one())
-    print(dumps(mongo.db.test.find({'x':10}),{'_id'}))
+    print(dumps(mongo.db.test.find({'x':10})))
     html = render_template('homepage.html')
     return html
 
@@ -84,34 +85,14 @@ def callback():
     profile_response = requests.get(user_profile_api_endpoint, headers=authorization_header)
 
     profile_data = json.loads(profile_response.text)
-    #print(profile_data)
+    print(profile_data)
     user_id = profile_data["id"]
     # Get user playlist data
     playlist_api_endpoint = "{}/playlists".format(profile_data["href"])
     playlists_response = requests.get(playlist_api_endpoint, headers=authorization_header)
-    #playlist_data = json.loads(playlists_response.text)
-    playlist_data=playlists_response.json()
+    playlist_data = json.loads(playlists_response.text)
     print(playlist_data)
 
-    print 'try to get playlist'
-    playlist_item=playlist_data[u'items']
-    playlist_links=[]
-    
-    for item in playlist_item:
-        playlist_links.append(playlist_item[0][u'external_urls'][u'spotify'])
-    print playlist_links
-
-    playlist_track=[]
-    for link in playlist_links:
-        print link
-        track_response=requests.get(link, headers=authorization_header)
-        #print track_response.json()
-    #    playlist_track.append(track_response.json())
-    print playlist_track
-    #playlist_ite=playlist_data[u'items'][0][u'external_urls'][u'spotify']
-    
-    #playlists=spotify.get_user_playlists(playlist_api_endpoint, authorization_header)
-    #print playlists
     
     # Combine profile and playlist data to display
     display_arr = [profile_data] + playlist_data["items"]
@@ -129,11 +110,35 @@ def search(name):
     return html
 
 
-
-
 @app.route('/artist/<id>')
 def artist(id):
     artist = spotify.get_artist(id)
+    playlists = spotify.get_user_playlists('zhch6639')
+
+    if artist['images']:
+        image_url = artist['images'][0]['url']
+    else:
+        image_url = 'http://placecage.com/600/400'
+
+    tracksdata = spotify.get_artist_top_tracks(id)
+    tracks = tracksdata['tracks']
+
+    artistsdata = spotify.get_related_artists(id)
+    relartists = artistsdata['artists']
+    html = render_template('artist.html',
+                            artist=artist,
+                            related_artists=relartists,
+                            image_url=image_url,
+                            tracks=tracks)
+    return html
+
+
+
+
+@app.route('/playlist/<id>')
+def playlist(id):
+    artist = spotify.get_artist(id)
+    playlists = spotify.get_user_playlists('zhch6639')
 
     if artist['images']:
         image_url = artist['images'][0]['url']
