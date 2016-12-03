@@ -1,4 +1,4 @@
-from flask import render_template, Flask, redirect, g, request
+from flask import render_template, Flask, redirect, g, request, Response, make_response
 import spotify
 import requests
 import base64
@@ -7,6 +7,7 @@ import json
 import spotify
 from flask_pymongo import PyMongo
 from bson.json_util import dumps
+import time
 
 app = Flask(__name__)
 mongo = PyMongo(app)
@@ -32,6 +33,8 @@ STATE = ""
 SHOW_DIALOG_bool = True
 SHOW_DIALOG_str = str(SHOW_DIALOG_bool).lower()
 
+# Set the USER_ID
+USER_ID = None
 
 auth_query_parameters = {
     "response_type": "code",
@@ -47,6 +50,9 @@ auth_query_parameters = {
 def homepage():
     print(mongo.db.test.find_one())
     print(dumps(mongo.db.test.find({'x':10})))
+
+    user_id = request.cookies.get('user')  
+    print(user_id)
     html = render_template('homepage.html')
     return html
 
@@ -87,6 +93,9 @@ def callback():
     profile_data = json.loads(profile_response.text)
     #print(profile_data)
     user_id = profile_data["id"]
+    # if USER_ID is None:
+    #     USER_ID = user_id
+    #     print("User ID", USER_ID)
     # Get user playlist data
     playlist_api_endpoint = "{}/playlists".format(profile_data["href"])
     playlists_response = requests.get(playlist_api_endpoint, headers=authorization_header)
@@ -121,22 +130,29 @@ def callback():
     
     # Combine profile and playlist data to display
     display_arr = [profile_data] + playlist_data["items"]
-    return render_template("homepage.html",sorted_array=display_arr, user_id=user_id)
+    # res = Response("You have log in<a href='/'>Home page</a>")
+    res = make_response(render_template("homepage.html",sorted_array=display_arr, user_id=user_id))
+    res.set_cookie(key='user', value=user_id, expires=time.time()+6*60000)
+    return res
+    # return render_template("homepage.html",sorted_array=display_arr, user_id=user_id)
 
 @app.route('/search/<name>')
 def search(name):
+    user_id = request.cookies.get('user')  
     data = spotify.search_by_artist_name(name)
     api_url = data['artists']['href']
     items = data['artists']['items']
     html = render_template('search.html',
                             artist_name=name,
                             results=items,
-                            api_url=api_url)
+                            api_url=api_url,
+                            user_id=user_id)
     return html
 
 
 @app.route('/artist/<id>')
 def artist(id):
+    user_id = request.cookies.get('user')  
     artist = spotify.get_artist(id)
 
     if artist['images']:
@@ -153,7 +169,8 @@ def artist(id):
                             artist=artist,
                             related_artists=relartists,
                             image_url=image_url,
-                            tracks=tracks)
+                            tracks=tracks,
+                            user_id=user_id)
     return html
 
 
@@ -161,9 +178,12 @@ def artist(id):
 
 @app.route('/playlist/<id>')
 def playlist(id):
-    artist = spotify.get_artist(id)
-    playlists = spotify.get_user_playlists('zhch6639')
+    # print("USER_ID",user_id)
 
+    artist = spotify.get_artist(id)
+    user_id = request.cookies.get('user')  
+    playlists = spotify.get_user_playlists(user_id)
+    print("This page user_id",user_id)
     if artist['images']:
         image_url = artist['images'][0]['url']
     else:
@@ -178,7 +198,8 @@ def playlist(id):
                             artist=artist,
                             related_artists=relartists,
                             image_url=image_url,
-                            tracks=tracks)
+                            tracks=tracks,
+                            user_id=user_id)
     return html
 
 
