@@ -91,7 +91,7 @@ def callback():
     profile_response = requests.get(user_profile_api_endpoint, headers=authorization_header)
 
     profile_data = json.loads(profile_response.text)
-    print(profile_data)
+    #print(profile_data)
     user_id = profile_data["id"]
     # if USER_ID is None:
     #     USER_ID = user_id
@@ -99,9 +99,33 @@ def callback():
     # Get user playlist data
     playlist_api_endpoint = "{}/playlists".format(profile_data["href"])
     playlists_response = requests.get(playlist_api_endpoint, headers=authorization_header)
-    playlist_data = json.loads(playlists_response.text)
+    #playlist_data = json.loads(playlists_response.text)
+    playlist_data=playlists_response.json()
     print(playlist_data)
 
+    print 'try to get playlist'
+    playlist_item=playlist_data[u'items']
+    playlist_ids=[]
+    
+    for item in playlist_item:
+        print item
+        playlist_ids.append(item[u'external_urls'][u'spotify'].split('/')[-1])
+    print playlist_ids
+
+    playlist_track=[]
+    playlist_file=open('playlist_file', 'w')
+    playlist_file.write(user_id)
+    playlist_file.write('\n')
+    for playlist_id in playlist_ids:
+        playlist_file.write(playlist_id+'\n')
+        playlist=requests.get('https://api.spotify.com/v1/users/{id}/playlists/{id2}'.format(id=user_id, id2=playlist_id), headers=authorization_header)
+        playlist_file.write(str(playlist.json())+'\n')
+        #playlist_track.append(track_response.json())
+    #print playlist_track
+    #playlist_ite=playlist_data[u'items'][0][u'external_urls'][u'spotify']
+    
+    #playlists=spotify.get_user_playlists(playlist_api_endpoint, authorization_header)
+    #print playlists
     
     # Combine profile and playlist data to display
     display_arr = [profile_data] + playlist_data["items"]
@@ -129,7 +153,6 @@ def search(name):
 def artist(id):
     user_id = request.cookies.get('user')  
     artist = spotify.get_artist(id)
-    playlists = spotify.get_user_playlists('zhch6639')
 
     if artist['images']:
         image_url = artist['images'][0]['url']

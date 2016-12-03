@@ -1,0 +1,1060 @@
+{
+  "collaborative" : false,
+  "description" : null,
+  "external_urls" : {
+    "spotify" : "http://open.spotify.com/user/lichamnesia/playlist/2296scsfio76HEYu402o3s"
+  },
+  "followers" : {
+    "href" : null,
+    "total" : 0
+  },
+  "href" : "https://api.spotify.com/v1/users/lichamnesia/playlists/2296scsfio76HEYu402o3s",
+  "id" : "2296scsfio76HEYu402o3s",
+  "images" : [ {
+    "height" : 640,
+    "url" : "https://i.scdn.co/image/660849fa669b8fd072487d557e39232ffdd64479",
+    "width" : 640
+  } ],
+  "name" : "Helen's playlist",
+  "owner" : {
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/lichamnesia"
+    },
+    "href" : "https://api.spotify.com/v1/users/lichamnesia",
+    "id" : "lichamnesia",
+    "type" : "user",
+    "uri" : "spotify:user:lichamnesia"
+  },
+  "public" : true,
+  "snapshot_id" : "bCJsshgygdqUpYE3W/TDO36F+azBD6Ufe7nC9MTkm6RnDY10A1Kh+/jkcmB8J+AL",
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/users/lichamnesia/playlists/2296scsfio76HEYu402o3s/tracks?offset=0&limit=100",
+    "items" : [ {
+      "added_at" : "2016-12-03T23:02:41Z",
+      "added_by" : {
+        "external_urls" : {
+          "spotify" : "http://open.spotify.com/user/lichamnesia"
+        },
+        "href" : "https://api.spotify.com/v1/users/lichamnesia",
+        "id" : "lichamnesia",
+        "type" : "user",
+        "uri" : "spotify:user:lichamnesia"
+      },
+      "is_local" : false,
+      "track" : {
+        "album" : {
+          "album_type" : "album",
+          "artists" : [ {
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/artist/5pKCCKE2ajJHZ9KAiaK11H"
+            },
+            "href" : "https://api.spotify.com/v1/artists/5pKCCKE2ajJHZ9KAiaK11H",
+            "id" : "5pKCCKE2ajJHZ9KAiaK11H",
+            "name" : "Rihanna",
+            "type" : "artist",
+            "uri" : "spotify:artist:5pKCCKE2ajJHZ9KAiaK11H"
+          } ],
+          "available_markets" : [ "CA", "US" ],
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/album/3Q149ZH46Z0f3oDR7vlDYV"
+          },
+          "href" : "https://api.spotify.com/v1/albums/3Q149ZH46Z0f3oDR7vlDYV",
+          "id" : "3Q149ZH46Z0f3oDR7vlDYV",
+          "images" : [ {
+            "height" : 640,
+            "url" : "https://i.scdn.co/image/660849fa669b8fd072487d557e39232ffdd64479",
+            "width" : 640
+          }, {
+            "height" : 300,
+            "url" : "https://i.scdn.co/image/f0ffeaa05aff767f2d48929af0c305eaa24e6941",
+            "width" : 300
+          }, {
+            "height" : 64,
+            "url" : "https://i.scdn.co/image/337f283c3c3085ad02b98b7fc54b6e74bdfe9319",
+            "width" : 64
+          } ],
+          "name" : "ANTI",
+          "type" : "album",
+          "uri" : "spotify:album:3Q149ZH46Z0f3oDR7vlDYV"
+        },
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/5pKCCKE2ajJHZ9KAiaK11H"
+          },
+          "href" : "https://api.spotify.com/v1/artists/5pKCCKE2ajJHZ9KAiaK11H",
+          "id" : "5pKCCKE2ajJHZ9KAiaK11H",
+          "name" : "Rihanna",
+          "type" : "artist",
+          "uri" : "spotify:artist:5pKCCKE2ajJHZ9KAiaK11H"
+        }, {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/7tYKF4w9nC0nq9CsPZTHyP"
+          },
+          "href" : "https://api.spotify.com/v1/artists/7tYKF4w9nC0nq9CsPZTHyP",
+          "id" : "7tYKF4w9nC0nq9CsPZTHyP",
+          "name" : "SZA",
+          "type" : "artist",
+          "uri" : "spotify:artist:7tYKF4w9nC0nq9CsPZTHyP"
+        } ],
+        "available_markets" : [ "CA", "US" ],
+        "disc_number" : 1,
+        "duration_ms" : 161066,
+        "explicit" : true,
+        "external_ids" : {
+          "isrc" : "QM5FT1600113"
+        },
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/track/0WgBb7XgdtbUW0GlYel9mH"
+        },
+        "href" : "https://api.spotify.com/v1/tracks/0WgBb7XgdtbUW0GlYel9mH",
+        "id" : "0WgBb7XgdtbUW0GlYel9mH",
+        "name" : "Consideration",
+        "popularity" : 63,
+        "preview_url" : "https://p.scdn.co/mp3-preview/d83f8deec83eb5d3f007fd7596b11d7691e6a82b",
+        "track_number" : 1,
+        "type" : "track",
+        "uri" : "spotify:track:0WgBb7XgdtbUW0GlYel9mH"
+      }
+    }, {
+      "added_at" : "2016-12-03T23:02:41Z",
+      "added_by" : {
+        "external_urls" : {
+          "spotify" : "http://open.spotify.com/user/lichamnesia"
+        },
+        "href" : "https://api.spotify.com/v1/users/lichamnesia",
+        "id" : "lichamnesia",
+        "type" : "user",
+        "uri" : "spotify:user:lichamnesia"
+      },
+      "is_local" : false,
+      "track" : {
+        "album" : {
+          "album_type" : "album",
+          "artists" : [ {
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/artist/5pKCCKE2ajJHZ9KAiaK11H"
+            },
+            "href" : "https://api.spotify.com/v1/artists/5pKCCKE2ajJHZ9KAiaK11H",
+            "id" : "5pKCCKE2ajJHZ9KAiaK11H",
+            "name" : "Rihanna",
+            "type" : "artist",
+            "uri" : "spotify:artist:5pKCCKE2ajJHZ9KAiaK11H"
+          } ],
+          "available_markets" : [ "CA", "US" ],
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/album/3Q149ZH46Z0f3oDR7vlDYV"
+          },
+          "href" : "https://api.spotify.com/v1/albums/3Q149ZH46Z0f3oDR7vlDYV",
+          "id" : "3Q149ZH46Z0f3oDR7vlDYV",
+          "images" : [ {
+            "height" : 640,
+            "url" : "https://i.scdn.co/image/660849fa669b8fd072487d557e39232ffdd64479",
+            "width" : 640
+          }, {
+            "height" : 300,
+            "url" : "https://i.scdn.co/image/f0ffeaa05aff767f2d48929af0c305eaa24e6941",
+            "width" : 300
+          }, {
+            "height" : 64,
+            "url" : "https://i.scdn.co/image/337f283c3c3085ad02b98b7fc54b6e74bdfe9319",
+            "width" : 64
+          } ],
+          "name" : "ANTI",
+          "type" : "album",
+          "uri" : "spotify:album:3Q149ZH46Z0f3oDR7vlDYV"
+        },
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/5pKCCKE2ajJHZ9KAiaK11H"
+          },
+          "href" : "https://api.spotify.com/v1/artists/5pKCCKE2ajJHZ9KAiaK11H",
+          "id" : "5pKCCKE2ajJHZ9KAiaK11H",
+          "name" : "Rihanna",
+          "type" : "artist",
+          "uri" : "spotify:artist:5pKCCKE2ajJHZ9KAiaK11H"
+        } ],
+        "available_markets" : [ "CA", "US" ],
+        "disc_number" : 1,
+        "duration_ms" : 72080,
+        "explicit" : true,
+        "external_ids" : {
+          "isrc" : "QM5FT1600114"
+        },
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/track/3cuGpP8vUSC1aq8tjD3J2c"
+        },
+        "href" : "https://api.spotify.com/v1/tracks/3cuGpP8vUSC1aq8tjD3J2c",
+        "id" : "3cuGpP8vUSC1aq8tjD3J2c",
+        "name" : "James Joint",
+        "popularity" : 58,
+        "preview_url" : "https://p.scdn.co/mp3-preview/f17febb24bc483fabb3df8c8283c6b35ce286b0b",
+        "track_number" : 2,
+        "type" : "track",
+        "uri" : "spotify:track:3cuGpP8vUSC1aq8tjD3J2c"
+      }
+    }, {
+      "added_at" : "2016-12-03T23:02:41Z",
+      "added_by" : {
+        "external_urls" : {
+          "spotify" : "http://open.spotify.com/user/lichamnesia"
+        },
+        "href" : "https://api.spotify.com/v1/users/lichamnesia",
+        "id" : "lichamnesia",
+        "type" : "user",
+        "uri" : "spotify:user:lichamnesia"
+      },
+      "is_local" : false,
+      "track" : {
+        "album" : {
+          "album_type" : "album",
+          "artists" : [ {
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/artist/5pKCCKE2ajJHZ9KAiaK11H"
+            },
+            "href" : "https://api.spotify.com/v1/artists/5pKCCKE2ajJHZ9KAiaK11H",
+            "id" : "5pKCCKE2ajJHZ9KAiaK11H",
+            "name" : "Rihanna",
+            "type" : "artist",
+            "uri" : "spotify:artist:5pKCCKE2ajJHZ9KAiaK11H"
+          } ],
+          "available_markets" : [ "CA", "US" ],
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/album/3Q149ZH46Z0f3oDR7vlDYV"
+          },
+          "href" : "https://api.spotify.com/v1/albums/3Q149ZH46Z0f3oDR7vlDYV",
+          "id" : "3Q149ZH46Z0f3oDR7vlDYV",
+          "images" : [ {
+            "height" : 640,
+            "url" : "https://i.scdn.co/image/660849fa669b8fd072487d557e39232ffdd64479",
+            "width" : 640
+          }, {
+            "height" : 300,
+            "url" : "https://i.scdn.co/image/f0ffeaa05aff767f2d48929af0c305eaa24e6941",
+            "width" : 300
+          }, {
+            "height" : 64,
+            "url" : "https://i.scdn.co/image/337f283c3c3085ad02b98b7fc54b6e74bdfe9319",
+            "width" : 64
+          } ],
+          "name" : "ANTI",
+          "type" : "album",
+          "uri" : "spotify:album:3Q149ZH46Z0f3oDR7vlDYV"
+        },
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/5pKCCKE2ajJHZ9KAiaK11H"
+          },
+          "href" : "https://api.spotify.com/v1/artists/5pKCCKE2ajJHZ9KAiaK11H",
+          "id" : "5pKCCKE2ajJHZ9KAiaK11H",
+          "name" : "Rihanna",
+          "type" : "artist",
+          "uri" : "spotify:artist:5pKCCKE2ajJHZ9KAiaK11H"
+        } ],
+        "available_markets" : [ "CA", "US" ],
+        "disc_number" : 1,
+        "duration_ms" : 253080,
+        "explicit" : true,
+        "external_ids" : {
+          "isrc" : "QM5FT1600115"
+        },
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/track/7bmqcI1HQwx1PWwYyZO0lg"
+        },
+        "href" : "https://api.spotify.com/v1/tracks/7bmqcI1HQwx1PWwYyZO0lg",
+        "id" : "7bmqcI1HQwx1PWwYyZO0lg",
+        "name" : "Kiss It Better",
+        "popularity" : 69,
+        "preview_url" : "https://p.scdn.co/mp3-preview/66137834d370e0087ecbe3b78adf90f77d870e23",
+        "track_number" : 3,
+        "type" : "track",
+        "uri" : "spotify:track:7bmqcI1HQwx1PWwYyZO0lg"
+      }
+    }, {
+      "added_at" : "2016-12-03T23:02:41Z",
+      "added_by" : {
+        "external_urls" : {
+          "spotify" : "http://open.spotify.com/user/lichamnesia"
+        },
+        "href" : "https://api.spotify.com/v1/users/lichamnesia",
+        "id" : "lichamnesia",
+        "type" : "user",
+        "uri" : "spotify:user:lichamnesia"
+      },
+      "is_local" : false,
+      "track" : {
+        "album" : {
+          "album_type" : "album",
+          "artists" : [ {
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/artist/5pKCCKE2ajJHZ9KAiaK11H"
+            },
+            "href" : "https://api.spotify.com/v1/artists/5pKCCKE2ajJHZ9KAiaK11H",
+            "id" : "5pKCCKE2ajJHZ9KAiaK11H",
+            "name" : "Rihanna",
+            "type" : "artist",
+            "uri" : "spotify:artist:5pKCCKE2ajJHZ9KAiaK11H"
+          } ],
+          "available_markets" : [ "CA", "US" ],
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/album/3Q149ZH46Z0f3oDR7vlDYV"
+          },
+          "href" : "https://api.spotify.com/v1/albums/3Q149ZH46Z0f3oDR7vlDYV",
+          "id" : "3Q149ZH46Z0f3oDR7vlDYV",
+          "images" : [ {
+            "height" : 640,
+            "url" : "https://i.scdn.co/image/660849fa669b8fd072487d557e39232ffdd64479",
+            "width" : 640
+          }, {
+            "height" : 300,
+            "url" : "https://i.scdn.co/image/f0ffeaa05aff767f2d48929af0c305eaa24e6941",
+            "width" : 300
+          }, {
+            "height" : 64,
+            "url" : "https://i.scdn.co/image/337f283c3c3085ad02b98b7fc54b6e74bdfe9319",
+            "width" : 64
+          } ],
+          "name" : "ANTI",
+          "type" : "album",
+          "uri" : "spotify:album:3Q149ZH46Z0f3oDR7vlDYV"
+        },
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/5pKCCKE2ajJHZ9KAiaK11H"
+          },
+          "href" : "https://api.spotify.com/v1/artists/5pKCCKE2ajJHZ9KAiaK11H",
+          "id" : "5pKCCKE2ajJHZ9KAiaK11H",
+          "name" : "Rihanna",
+          "type" : "artist",
+          "uri" : "spotify:artist:5pKCCKE2ajJHZ9KAiaK11H"
+        }, {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4"
+          },
+          "href" : "https://api.spotify.com/v1/artists/3TVXtAsR1Inumwj472S9r4",
+          "id" : "3TVXtAsR1Inumwj472S9r4",
+          "name" : "Drake",
+          "type" : "artist",
+          "uri" : "spotify:artist:3TVXtAsR1Inumwj472S9r4"
+        } ],
+        "available_markets" : [ "CA", "US" ],
+        "disc_number" : 1,
+        "duration_ms" : 219320,
+        "explicit" : true,
+        "external_ids" : {
+          "isrc" : "QM5FT1600116"
+        },
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/track/32lmL4vQAAotg6MrJnhlQZ"
+        },
+        "href" : "https://api.spotify.com/v1/tracks/32lmL4vQAAotg6MrJnhlQZ",
+        "id" : "32lmL4vQAAotg6MrJnhlQZ",
+        "name" : "Work",
+        "popularity" : 77,
+        "preview_url" : "https://p.scdn.co/mp3-preview/bc9a706fce737f90b60fa5c995cd77d1ade7571d",
+        "track_number" : 4,
+        "type" : "track",
+        "uri" : "spotify:track:32lmL4vQAAotg6MrJnhlQZ"
+      }
+    }, {
+      "added_at" : "2016-12-03T23:02:41Z",
+      "added_by" : {
+        "external_urls" : {
+          "spotify" : "http://open.spotify.com/user/lichamnesia"
+        },
+        "href" : "https://api.spotify.com/v1/users/lichamnesia",
+        "id" : "lichamnesia",
+        "type" : "user",
+        "uri" : "spotify:user:lichamnesia"
+      },
+      "is_local" : false,
+      "track" : {
+        "album" : {
+          "album_type" : "album",
+          "artists" : [ {
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/artist/5pKCCKE2ajJHZ9KAiaK11H"
+            },
+            "href" : "https://api.spotify.com/v1/artists/5pKCCKE2ajJHZ9KAiaK11H",
+            "id" : "5pKCCKE2ajJHZ9KAiaK11H",
+            "name" : "Rihanna",
+            "type" : "artist",
+            "uri" : "spotify:artist:5pKCCKE2ajJHZ9KAiaK11H"
+          } ],
+          "available_markets" : [ "CA", "US" ],
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/album/3Q149ZH46Z0f3oDR7vlDYV"
+          },
+          "href" : "https://api.spotify.com/v1/albums/3Q149ZH46Z0f3oDR7vlDYV",
+          "id" : "3Q149ZH46Z0f3oDR7vlDYV",
+          "images" : [ {
+            "height" : 640,
+            "url" : "https://i.scdn.co/image/660849fa669b8fd072487d557e39232ffdd64479",
+            "width" : 640
+          }, {
+            "height" : 300,
+            "url" : "https://i.scdn.co/image/f0ffeaa05aff767f2d48929af0c305eaa24e6941",
+            "width" : 300
+          }, {
+            "height" : 64,
+            "url" : "https://i.scdn.co/image/337f283c3c3085ad02b98b7fc54b6e74bdfe9319",
+            "width" : 64
+          } ],
+          "name" : "ANTI",
+          "type" : "album",
+          "uri" : "spotify:album:3Q149ZH46Z0f3oDR7vlDYV"
+        },
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/5pKCCKE2ajJHZ9KAiaK11H"
+          },
+          "href" : "https://api.spotify.com/v1/artists/5pKCCKE2ajJHZ9KAiaK11H",
+          "id" : "5pKCCKE2ajJHZ9KAiaK11H",
+          "name" : "Rihanna",
+          "type" : "artist",
+          "uri" : "spotify:artist:5pKCCKE2ajJHZ9KAiaK11H"
+        } ],
+        "available_markets" : [ "CA", "US" ],
+        "disc_number" : 1,
+        "duration_ms" : 186466,
+        "explicit" : false,
+        "external_ids" : {
+          "isrc" : "QM5FT1600104"
+        },
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/track/6KFaHC9G178beAp7P0Vi5S"
+        },
+        "href" : "https://api.spotify.com/v1/tracks/6KFaHC9G178beAp7P0Vi5S",
+        "id" : "6KFaHC9G178beAp7P0Vi5S",
+        "name" : "Desperado",
+        "popularity" : 66,
+        "preview_url" : "https://p.scdn.co/mp3-preview/6c0aeb7eea25225e347bb14db0405804b092e78f",
+        "track_number" : 5,
+        "type" : "track",
+        "uri" : "spotify:track:6KFaHC9G178beAp7P0Vi5S"
+      }
+    }, {
+      "added_at" : "2016-12-03T23:02:41Z",
+      "added_by" : {
+        "external_urls" : {
+          "spotify" : "http://open.spotify.com/user/lichamnesia"
+        },
+        "href" : "https://api.spotify.com/v1/users/lichamnesia",
+        "id" : "lichamnesia",
+        "type" : "user",
+        "uri" : "spotify:user:lichamnesia"
+      },
+      "is_local" : false,
+      "track" : {
+        "album" : {
+          "album_type" : "album",
+          "artists" : [ {
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/artist/5pKCCKE2ajJHZ9KAiaK11H"
+            },
+            "href" : "https://api.spotify.com/v1/artists/5pKCCKE2ajJHZ9KAiaK11H",
+            "id" : "5pKCCKE2ajJHZ9KAiaK11H",
+            "name" : "Rihanna",
+            "type" : "artist",
+            "uri" : "spotify:artist:5pKCCKE2ajJHZ9KAiaK11H"
+          } ],
+          "available_markets" : [ "CA", "US" ],
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/album/3Q149ZH46Z0f3oDR7vlDYV"
+          },
+          "href" : "https://api.spotify.com/v1/albums/3Q149ZH46Z0f3oDR7vlDYV",
+          "id" : "3Q149ZH46Z0f3oDR7vlDYV",
+          "images" : [ {
+            "height" : 640,
+            "url" : "https://i.scdn.co/image/660849fa669b8fd072487d557e39232ffdd64479",
+            "width" : 640
+          }, {
+            "height" : 300,
+            "url" : "https://i.scdn.co/image/f0ffeaa05aff767f2d48929af0c305eaa24e6941",
+            "width" : 300
+          }, {
+            "height" : 64,
+            "url" : "https://i.scdn.co/image/337f283c3c3085ad02b98b7fc54b6e74bdfe9319",
+            "width" : 64
+          } ],
+          "name" : "ANTI",
+          "type" : "album",
+          "uri" : "spotify:album:3Q149ZH46Z0f3oDR7vlDYV"
+        },
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/5pKCCKE2ajJHZ9KAiaK11H"
+          },
+          "href" : "https://api.spotify.com/v1/artists/5pKCCKE2ajJHZ9KAiaK11H",
+          "id" : "5pKCCKE2ajJHZ9KAiaK11H",
+          "name" : "Rihanna",
+          "type" : "artist",
+          "uri" : "spotify:artist:5pKCCKE2ajJHZ9KAiaK11H"
+        } ],
+        "available_markets" : [ "CA", "US" ],
+        "disc_number" : 1,
+        "duration_ms" : 235586,
+        "explicit" : true,
+        "external_ids" : {
+          "isrc" : "QM5FT1600117"
+        },
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/track/2OvftP4F7VMMTdfyUx883s"
+        },
+        "href" : "https://api.spotify.com/v1/tracks/2OvftP4F7VMMTdfyUx883s",
+        "id" : "2OvftP4F7VMMTdfyUx883s",
+        "name" : "Woo",
+        "popularity" : 61,
+        "preview_url" : "https://p.scdn.co/mp3-preview/f4e1c9a52abda56feb12309189fbaf005e2c8794",
+        "track_number" : 6,
+        "type" : "track",
+        "uri" : "spotify:track:2OvftP4F7VMMTdfyUx883s"
+      }
+    }, {
+      "added_at" : "2016-12-03T23:02:41Z",
+      "added_by" : {
+        "external_urls" : {
+          "spotify" : "http://open.spotify.com/user/lichamnesia"
+        },
+        "href" : "https://api.spotify.com/v1/users/lichamnesia",
+        "id" : "lichamnesia",
+        "type" : "user",
+        "uri" : "spotify:user:lichamnesia"
+      },
+      "is_local" : false,
+      "track" : {
+        "album" : {
+          "album_type" : "album",
+          "artists" : [ {
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/artist/5pKCCKE2ajJHZ9KAiaK11H"
+            },
+            "href" : "https://api.spotify.com/v1/artists/5pKCCKE2ajJHZ9KAiaK11H",
+            "id" : "5pKCCKE2ajJHZ9KAiaK11H",
+            "name" : "Rihanna",
+            "type" : "artist",
+            "uri" : "spotify:artist:5pKCCKE2ajJHZ9KAiaK11H"
+          } ],
+          "available_markets" : [ "CA", "US" ],
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/album/3Q149ZH46Z0f3oDR7vlDYV"
+          },
+          "href" : "https://api.spotify.com/v1/albums/3Q149ZH46Z0f3oDR7vlDYV",
+          "id" : "3Q149ZH46Z0f3oDR7vlDYV",
+          "images" : [ {
+            "height" : 640,
+            "url" : "https://i.scdn.co/image/660849fa669b8fd072487d557e39232ffdd64479",
+            "width" : 640
+          }, {
+            "height" : 300,
+            "url" : "https://i.scdn.co/image/f0ffeaa05aff767f2d48929af0c305eaa24e6941",
+            "width" : 300
+          }, {
+            "height" : 64,
+            "url" : "https://i.scdn.co/image/337f283c3c3085ad02b98b7fc54b6e74bdfe9319",
+            "width" : 64
+          } ],
+          "name" : "ANTI",
+          "type" : "album",
+          "uri" : "spotify:album:3Q149ZH46Z0f3oDR7vlDYV"
+        },
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/5pKCCKE2ajJHZ9KAiaK11H"
+          },
+          "href" : "https://api.spotify.com/v1/artists/5pKCCKE2ajJHZ9KAiaK11H",
+          "id" : "5pKCCKE2ajJHZ9KAiaK11H",
+          "name" : "Rihanna",
+          "type" : "artist",
+          "uri" : "spotify:artist:5pKCCKE2ajJHZ9KAiaK11H"
+        } ],
+        "available_markets" : [ "CA", "US" ],
+        "disc_number" : 1,
+        "duration_ms" : 191600,
+        "explicit" : true,
+        "external_ids" : {
+          "isrc" : "QM5FT1600118"
+        },
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/track/1Tt4sE4pXi57mTD1GCzsqm"
+        },
+        "href" : "https://api.spotify.com/v1/tracks/1Tt4sE4pXi57mTD1GCzsqm",
+        "id" : "1Tt4sE4pXi57mTD1GCzsqm",
+        "name" : "Needed Me",
+        "popularity" : 83,
+        "preview_url" : "https://p.scdn.co/mp3-preview/c37edba61cea297d567dfcbc362a1e69932967d6",
+        "track_number" : 7,
+        "type" : "track",
+        "uri" : "spotify:track:1Tt4sE4pXi57mTD1GCzsqm"
+      }
+    }, {
+      "added_at" : "2016-12-03T23:02:41Z",
+      "added_by" : {
+        "external_urls" : {
+          "spotify" : "http://open.spotify.com/user/lichamnesia"
+        },
+        "href" : "https://api.spotify.com/v1/users/lichamnesia",
+        "id" : "lichamnesia",
+        "type" : "user",
+        "uri" : "spotify:user:lichamnesia"
+      },
+      "is_local" : false,
+      "track" : {
+        "album" : {
+          "album_type" : "album",
+          "artists" : [ {
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/artist/5pKCCKE2ajJHZ9KAiaK11H"
+            },
+            "href" : "https://api.spotify.com/v1/artists/5pKCCKE2ajJHZ9KAiaK11H",
+            "id" : "5pKCCKE2ajJHZ9KAiaK11H",
+            "name" : "Rihanna",
+            "type" : "artist",
+            "uri" : "spotify:artist:5pKCCKE2ajJHZ9KAiaK11H"
+          } ],
+          "available_markets" : [ "CA", "US" ],
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/album/3Q149ZH46Z0f3oDR7vlDYV"
+          },
+          "href" : "https://api.spotify.com/v1/albums/3Q149ZH46Z0f3oDR7vlDYV",
+          "id" : "3Q149ZH46Z0f3oDR7vlDYV",
+          "images" : [ {
+            "height" : 640,
+            "url" : "https://i.scdn.co/image/660849fa669b8fd072487d557e39232ffdd64479",
+            "width" : 640
+          }, {
+            "height" : 300,
+            "url" : "https://i.scdn.co/image/f0ffeaa05aff767f2d48929af0c305eaa24e6941",
+            "width" : 300
+          }, {
+            "height" : 64,
+            "url" : "https://i.scdn.co/image/337f283c3c3085ad02b98b7fc54b6e74bdfe9319",
+            "width" : 64
+          } ],
+          "name" : "ANTI",
+          "type" : "album",
+          "uri" : "spotify:album:3Q149ZH46Z0f3oDR7vlDYV"
+        },
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/5pKCCKE2ajJHZ9KAiaK11H"
+          },
+          "href" : "https://api.spotify.com/v1/artists/5pKCCKE2ajJHZ9KAiaK11H",
+          "id" : "5pKCCKE2ajJHZ9KAiaK11H",
+          "name" : "Rihanna",
+          "type" : "artist",
+          "uri" : "spotify:artist:5pKCCKE2ajJHZ9KAiaK11H"
+        } ],
+        "available_markets" : [ "CA", "US" ],
+        "disc_number" : 1,
+        "duration_ms" : 133080,
+        "explicit" : true,
+        "external_ids" : {
+          "isrc" : "QM5FT1600119"
+        },
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/track/4kqxy0SvQ2N34nOJ9ggfMu"
+        },
+        "href" : "https://api.spotify.com/v1/tracks/4kqxy0SvQ2N34nOJ9ggfMu",
+        "id" : "4kqxy0SvQ2N34nOJ9ggfMu",
+        "name" : "Yeah, I Said It",
+        "popularity" : 63,
+        "preview_url" : "https://p.scdn.co/mp3-preview/e271d93bae3aa8cca62060a45ab6e2c4b0a16ac9",
+        "track_number" : 8,
+        "type" : "track",
+        "uri" : "spotify:track:4kqxy0SvQ2N34nOJ9ggfMu"
+      }
+    }, {
+      "added_at" : "2016-12-03T23:02:41Z",
+      "added_by" : {
+        "external_urls" : {
+          "spotify" : "http://open.spotify.com/user/lichamnesia"
+        },
+        "href" : "https://api.spotify.com/v1/users/lichamnesia",
+        "id" : "lichamnesia",
+        "type" : "user",
+        "uri" : "spotify:user:lichamnesia"
+      },
+      "is_local" : false,
+      "track" : {
+        "album" : {
+          "album_type" : "album",
+          "artists" : [ {
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/artist/5pKCCKE2ajJHZ9KAiaK11H"
+            },
+            "href" : "https://api.spotify.com/v1/artists/5pKCCKE2ajJHZ9KAiaK11H",
+            "id" : "5pKCCKE2ajJHZ9KAiaK11H",
+            "name" : "Rihanna",
+            "type" : "artist",
+            "uri" : "spotify:artist:5pKCCKE2ajJHZ9KAiaK11H"
+          } ],
+          "available_markets" : [ "CA", "US" ],
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/album/3Q149ZH46Z0f3oDR7vlDYV"
+          },
+          "href" : "https://api.spotify.com/v1/albums/3Q149ZH46Z0f3oDR7vlDYV",
+          "id" : "3Q149ZH46Z0f3oDR7vlDYV",
+          "images" : [ {
+            "height" : 640,
+            "url" : "https://i.scdn.co/image/660849fa669b8fd072487d557e39232ffdd64479",
+            "width" : 640
+          }, {
+            "height" : 300,
+            "url" : "https://i.scdn.co/image/f0ffeaa05aff767f2d48929af0c305eaa24e6941",
+            "width" : 300
+          }, {
+            "height" : 64,
+            "url" : "https://i.scdn.co/image/337f283c3c3085ad02b98b7fc54b6e74bdfe9319",
+            "width" : 64
+          } ],
+          "name" : "ANTI",
+          "type" : "album",
+          "uri" : "spotify:album:3Q149ZH46Z0f3oDR7vlDYV"
+        },
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/5pKCCKE2ajJHZ9KAiaK11H"
+          },
+          "href" : "https://api.spotify.com/v1/artists/5pKCCKE2ajJHZ9KAiaK11H",
+          "id" : "5pKCCKE2ajJHZ9KAiaK11H",
+          "name" : "Rihanna",
+          "type" : "artist",
+          "uri" : "spotify:artist:5pKCCKE2ajJHZ9KAiaK11H"
+        } ],
+        "available_markets" : [ "CA", "US" ],
+        "disc_number" : 1,
+        "duration_ms" : 397093,
+        "explicit" : false,
+        "external_ids" : {
+          "isrc" : "QM5FT1600108"
+        },
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/track/046irIGshCqu24AjmEWZtr"
+        },
+        "href" : "https://api.spotify.com/v1/tracks/046irIGshCqu24AjmEWZtr",
+        "id" : "046irIGshCqu24AjmEWZtr",
+        "name" : "Same Ol’ Mistakes",
+        "popularity" : 61,
+        "preview_url" : "https://p.scdn.co/mp3-preview/ab51f5c0ebc95e9e4ee8abbe28b74805358cf5fd",
+        "track_number" : 9,
+        "type" : "track",
+        "uri" : "spotify:track:046irIGshCqu24AjmEWZtr"
+      }
+    }, {
+      "added_at" : "2016-12-03T23:02:41Z",
+      "added_by" : {
+        "external_urls" : {
+          "spotify" : "http://open.spotify.com/user/lichamnesia"
+        },
+        "href" : "https://api.spotify.com/v1/users/lichamnesia",
+        "id" : "lichamnesia",
+        "type" : "user",
+        "uri" : "spotify:user:lichamnesia"
+      },
+      "is_local" : false,
+      "track" : {
+        "album" : {
+          "album_type" : "album",
+          "artists" : [ {
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/artist/5pKCCKE2ajJHZ9KAiaK11H"
+            },
+            "href" : "https://api.spotify.com/v1/artists/5pKCCKE2ajJHZ9KAiaK11H",
+            "id" : "5pKCCKE2ajJHZ9KAiaK11H",
+            "name" : "Rihanna",
+            "type" : "artist",
+            "uri" : "spotify:artist:5pKCCKE2ajJHZ9KAiaK11H"
+          } ],
+          "available_markets" : [ "CA", "US" ],
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/album/3Q149ZH46Z0f3oDR7vlDYV"
+          },
+          "href" : "https://api.spotify.com/v1/albums/3Q149ZH46Z0f3oDR7vlDYV",
+          "id" : "3Q149ZH46Z0f3oDR7vlDYV",
+          "images" : [ {
+            "height" : 640,
+            "url" : "https://i.scdn.co/image/660849fa669b8fd072487d557e39232ffdd64479",
+            "width" : 640
+          }, {
+            "height" : 300,
+            "url" : "https://i.scdn.co/image/f0ffeaa05aff767f2d48929af0c305eaa24e6941",
+            "width" : 300
+          }, {
+            "height" : 64,
+            "url" : "https://i.scdn.co/image/337f283c3c3085ad02b98b7fc54b6e74bdfe9319",
+            "width" : 64
+          } ],
+          "name" : "ANTI",
+          "type" : "album",
+          "uri" : "spotify:album:3Q149ZH46Z0f3oDR7vlDYV"
+        },
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/5pKCCKE2ajJHZ9KAiaK11H"
+          },
+          "href" : "https://api.spotify.com/v1/artists/5pKCCKE2ajJHZ9KAiaK11H",
+          "id" : "5pKCCKE2ajJHZ9KAiaK11H",
+          "name" : "Rihanna",
+          "type" : "artist",
+          "uri" : "spotify:artist:5pKCCKE2ajJHZ9KAiaK11H"
+        } ],
+        "available_markets" : [ "CA", "US" ],
+        "disc_number" : 1,
+        "duration_ms" : 202506,
+        "explicit" : false,
+        "external_ids" : {
+          "isrc" : "QM5FT1600109"
+        },
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/track/6TTtJwtPEAI7yPHKR3XEKE"
+        },
+        "href" : "https://api.spotify.com/v1/tracks/6TTtJwtPEAI7yPHKR3XEKE",
+        "id" : "6TTtJwtPEAI7yPHKR3XEKE",
+        "name" : "Never Ending",
+        "popularity" : 58,
+        "preview_url" : "https://p.scdn.co/mp3-preview/404ac5d6554d771df8e774e58701e3e30d2c932c",
+        "track_number" : 10,
+        "type" : "track",
+        "uri" : "spotify:track:6TTtJwtPEAI7yPHKR3XEKE"
+      }
+    }, {
+      "added_at" : "2016-12-03T23:02:41Z",
+      "added_by" : {
+        "external_urls" : {
+          "spotify" : "http://open.spotify.com/user/lichamnesia"
+        },
+        "href" : "https://api.spotify.com/v1/users/lichamnesia",
+        "id" : "lichamnesia",
+        "type" : "user",
+        "uri" : "spotify:user:lichamnesia"
+      },
+      "is_local" : false,
+      "track" : {
+        "album" : {
+          "album_type" : "album",
+          "artists" : [ {
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/artist/5pKCCKE2ajJHZ9KAiaK11H"
+            },
+            "href" : "https://api.spotify.com/v1/artists/5pKCCKE2ajJHZ9KAiaK11H",
+            "id" : "5pKCCKE2ajJHZ9KAiaK11H",
+            "name" : "Rihanna",
+            "type" : "artist",
+            "uri" : "spotify:artist:5pKCCKE2ajJHZ9KAiaK11H"
+          } ],
+          "available_markets" : [ "CA", "US" ],
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/album/3Q149ZH46Z0f3oDR7vlDYV"
+          },
+          "href" : "https://api.spotify.com/v1/albums/3Q149ZH46Z0f3oDR7vlDYV",
+          "id" : "3Q149ZH46Z0f3oDR7vlDYV",
+          "images" : [ {
+            "height" : 640,
+            "url" : "https://i.scdn.co/image/660849fa669b8fd072487d557e39232ffdd64479",
+            "width" : 640
+          }, {
+            "height" : 300,
+            "url" : "https://i.scdn.co/image/f0ffeaa05aff767f2d48929af0c305eaa24e6941",
+            "width" : 300
+          }, {
+            "height" : 64,
+            "url" : "https://i.scdn.co/image/337f283c3c3085ad02b98b7fc54b6e74bdfe9319",
+            "width" : 64
+          } ],
+          "name" : "ANTI",
+          "type" : "album",
+          "uri" : "spotify:album:3Q149ZH46Z0f3oDR7vlDYV"
+        },
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/5pKCCKE2ajJHZ9KAiaK11H"
+          },
+          "href" : "https://api.spotify.com/v1/artists/5pKCCKE2ajJHZ9KAiaK11H",
+          "id" : "5pKCCKE2ajJHZ9KAiaK11H",
+          "name" : "Rihanna",
+          "type" : "artist",
+          "uri" : "spotify:artist:5pKCCKE2ajJHZ9KAiaK11H"
+        } ],
+        "available_markets" : [ "CA", "US" ],
+        "disc_number" : 1,
+        "duration_ms" : 224000,
+        "explicit" : true,
+        "external_ids" : {
+          "isrc" : "QM5FT1600120"
+        },
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/track/2aksifNn5ph8igDOkPBA02"
+        },
+        "href" : "https://api.spotify.com/v1/tracks/2aksifNn5ph8igDOkPBA02",
+        "id" : "2aksifNn5ph8igDOkPBA02",
+        "name" : "Love On The Brain",
+        "popularity" : 75,
+        "preview_url" : "https://p.scdn.co/mp3-preview/10fbb7f593e6e44b0eae872550ab2352dfb5d130",
+        "track_number" : 11,
+        "type" : "track",
+        "uri" : "spotify:track:2aksifNn5ph8igDOkPBA02"
+      }
+    }, {
+      "added_at" : "2016-12-03T23:02:41Z",
+      "added_by" : {
+        "external_urls" : {
+          "spotify" : "http://open.spotify.com/user/lichamnesia"
+        },
+        "href" : "https://api.spotify.com/v1/users/lichamnesia",
+        "id" : "lichamnesia",
+        "type" : "user",
+        "uri" : "spotify:user:lichamnesia"
+      },
+      "is_local" : false,
+      "track" : {
+        "album" : {
+          "album_type" : "album",
+          "artists" : [ {
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/artist/5pKCCKE2ajJHZ9KAiaK11H"
+            },
+            "href" : "https://api.spotify.com/v1/artists/5pKCCKE2ajJHZ9KAiaK11H",
+            "id" : "5pKCCKE2ajJHZ9KAiaK11H",
+            "name" : "Rihanna",
+            "type" : "artist",
+            "uri" : "spotify:artist:5pKCCKE2ajJHZ9KAiaK11H"
+          } ],
+          "available_markets" : [ "CA", "US" ],
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/album/3Q149ZH46Z0f3oDR7vlDYV"
+          },
+          "href" : "https://api.spotify.com/v1/albums/3Q149ZH46Z0f3oDR7vlDYV",
+          "id" : "3Q149ZH46Z0f3oDR7vlDYV",
+          "images" : [ {
+            "height" : 640,
+            "url" : "https://i.scdn.co/image/660849fa669b8fd072487d557e39232ffdd64479",
+            "width" : 640
+          }, {
+            "height" : 300,
+            "url" : "https://i.scdn.co/image/f0ffeaa05aff767f2d48929af0c305eaa24e6941",
+            "width" : 300
+          }, {
+            "height" : 64,
+            "url" : "https://i.scdn.co/image/337f283c3c3085ad02b98b7fc54b6e74bdfe9319",
+            "width" : 64
+          } ],
+          "name" : "ANTI",
+          "type" : "album",
+          "uri" : "spotify:album:3Q149ZH46Z0f3oDR7vlDYV"
+        },
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/5pKCCKE2ajJHZ9KAiaK11H"
+          },
+          "href" : "https://api.spotify.com/v1/artists/5pKCCKE2ajJHZ9KAiaK11H",
+          "id" : "5pKCCKE2ajJHZ9KAiaK11H",
+          "name" : "Rihanna",
+          "type" : "artist",
+          "uri" : "spotify:artist:5pKCCKE2ajJHZ9KAiaK11H"
+        } ],
+        "available_markets" : [ "CA", "US" ],
+        "disc_number" : 1,
+        "duration_ms" : 120626,
+        "explicit" : true,
+        "external_ids" : {
+          "isrc" : "QM5FT1600121"
+        },
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/track/1XrrzhGLErbkiwH5v3xww9"
+        },
+        "href" : "https://api.spotify.com/v1/tracks/1XrrzhGLErbkiwH5v3xww9",
+        "id" : "1XrrzhGLErbkiwH5v3xww9",
+        "name" : "Higher",
+        "popularity" : 63,
+        "preview_url" : "https://p.scdn.co/mp3-preview/ffa03bf08a3dfa69590ebccf45e3595beae2a9a5",
+        "track_number" : 12,
+        "type" : "track",
+        "uri" : "spotify:track:1XrrzhGLErbkiwH5v3xww9"
+      }
+    }, {
+      "added_at" : "2016-12-03T23:02:41Z",
+      "added_by" : {
+        "external_urls" : {
+          "spotify" : "http://open.spotify.com/user/lichamnesia"
+        },
+        "href" : "https://api.spotify.com/v1/users/lichamnesia",
+        "id" : "lichamnesia",
+        "type" : "user",
+        "uri" : "spotify:user:lichamnesia"
+      },
+      "is_local" : false,
+      "track" : {
+        "album" : {
+          "album_type" : "album",
+          "artists" : [ {
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/artist/5pKCCKE2ajJHZ9KAiaK11H"
+            },
+            "href" : "https://api.spotify.com/v1/artists/5pKCCKE2ajJHZ9KAiaK11H",
+            "id" : "5pKCCKE2ajJHZ9KAiaK11H",
+            "name" : "Rihanna",
+            "type" : "artist",
+            "uri" : "spotify:artist:5pKCCKE2ajJHZ9KAiaK11H"
+          } ],
+          "available_markets" : [ "CA", "US" ],
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/album/3Q149ZH46Z0f3oDR7vlDYV"
+          },
+          "href" : "https://api.spotify.com/v1/albums/3Q149ZH46Z0f3oDR7vlDYV",
+          "id" : "3Q149ZH46Z0f3oDR7vlDYV",
+          "images" : [ {
+            "height" : 640,
+            "url" : "https://i.scdn.co/image/660849fa669b8fd072487d557e39232ffdd64479",
+            "width" : 640
+          }, {
+            "height" : 300,
+            "url" : "https://i.scdn.co/image/f0ffeaa05aff767f2d48929af0c305eaa24e6941",
+            "width" : 300
+          }, {
+            "height" : 64,
+            "url" : "https://i.scdn.co/image/337f283c3c3085ad02b98b7fc54b6e74bdfe9319",
+            "width" : 64
+          } ],
+          "name" : "ANTI",
+          "type" : "album",
+          "uri" : "spotify:album:3Q149ZH46Z0f3oDR7vlDYV"
+        },
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/5pKCCKE2ajJHZ9KAiaK11H"
+          },
+          "href" : "https://api.spotify.com/v1/artists/5pKCCKE2ajJHZ9KAiaK11H",
+          "id" : "5pKCCKE2ajJHZ9KAiaK11H",
+          "name" : "Rihanna",
+          "type" : "artist",
+          "uri" : "spotify:artist:5pKCCKE2ajJHZ9KAiaK11H"
+        } ],
+        "available_markets" : [ "CA", "US" ],
+        "disc_number" : 1,
+        "duration_ms" : 223226,
+        "explicit" : false,
+        "external_ids" : {
+          "isrc" : "QM5FT1600112"
+        },
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/track/4gFxywaJejXWxo0NjlWzgg"
+        },
+        "href" : "https://api.spotify.com/v1/tracks/4gFxywaJejXWxo0NjlWzgg",
+        "id" : "4gFxywaJejXWxo0NjlWzgg",
+        "name" : "Close To You",
+        "popularity" : 62,
+        "preview_url" : "https://p.scdn.co/mp3-preview/c936f44de2de5a4999ca284f73368fc8f3c89f68",
+        "track_number" : 13,
+        "type" : "track",
+        "uri" : "spotify:track:4gFxywaJejXWxo0NjlWzgg"
+      }
+    } ],
+    "limit" : 100,
+    "next" : null,
+    "offset" : 0,
+    "previous" : null,
+    "total" : 13
+  },
+  "type" : "playlist",
+  "uri" : "spotify:user:lichamnesia:playlist:2296scsfio76HEYu402o3s"
+}
