@@ -11,7 +11,6 @@ GET_PLAYLISTS = 'https://api.spotify.com/v1/users/{user_id}/playlists/{playlist_
 def get_artist(artist_id):
     url = GET_ARTIST_ENDPOINT.format(id=artist_id)
     resp = requests.get(url)
-    print 'get artist'
     return resp.json()
 
 
@@ -36,11 +35,9 @@ def get_artist_top_tracks(artist_id, country='US'):
     resp = requests.get(url, params=myparams)
     return resp.json()
 
-def get_user_playlists(user_id):
+def get_user_playlists(user_id, headers):
     url = GET_USER_PLAYLISTS.format(id=user_id)
-    resp=requests.get(url)
-    print 'get playlists'
+    resp=requests.get(url, headers)
     print resp.json()
     return resp.json()
-
 
