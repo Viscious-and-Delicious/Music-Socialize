@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+    </body>
+<script type="text/javascript">
+// var querystring = require('querystring');
+var client_id = '630b86f26d9e4839a970cc2057c7f5c5'; // Your client id
+var client_secret = 'e193ee961de84c59951786769cb35969'; // Your secret
+var redirect_uri = 'http%3A%2F%2Flocalhost:5000%2Fprofile'; // Your redirect uri
+// https://accounts.spotify.com/en/authorize?response_type=code&client_id=630b86f26d9e4839a970cc2057c7f5c5&scope=user-read-private%20user-read-email&redirect_uri=http%3A%2F%2Flocalhost:8888%2Fcallback&state=Izda9DkMaKz5kn8H
+/**
+ * Generates a random string containing numbers and letters
+ * @param  {number} length The length of the string
+ * @return {string} The generated string
+ */
+var generateRandomString = function(length) {
+  var text = '';
+  var possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+
+  for (var i = 0; i < length; i++) {
+    text += possible.charAt(Math.floor(Math.random() * possible.length));
+  }
+  return text;
+};
+
+var stringify = function (obj) {
+  var defaults = {
+    encode: true,
+    strict: true
+  };
+
+  // opts = objectAssign(defaults, opts);
+
+  return obj ? Object.keys(obj).sort().map(function (key) {
+    var val = obj[key];
+
+    if (val === undefined) {
+      return '';
+    }
+
+    
+
+    if (Array.isArray(val)) {
+      var result = [];
+
+      val.slice().forEach(function (val2) {
+        if (val2 === undefined) {
+          return;
+        }
+
+        
+      });
+
+      return result.join('&');
+    }
+
+    return key + '=' + val;
+  }).filter(function (x) {
+    return x.length > 0;
+  }).join('&') : '';
+};
+
+var state = generateRandomString(16);
+
+// your application requests authorization
+var scope = 'user-read-private user-read-email';
+
+<!--
+function Redirect()
+{
+    window.location='https://accounts.spotify.com/authorize?' +
+    stringify({
+      response_type: 'code',
+      client_id: client_id,
+      scope: scope,
+      redirect_uri: redirect_uri,
+      state: state
+    });
+}
+
+document.write("You will be redirected to main page in 10 sec.");
+setTimeout('Redirect()', 0);
+//-->
+</script>
+</html>
+
