@@ -1,0 +1,118 @@
+{
+  "collaborative" : false,
+  "description" : null,
+  "external_urls" : {
+    "spotify" : "http://open.spotify.com/user/lichamnesia/playlist/77lqbJtRCW0QlLppBFsziA"
+  },
+  "followers" : {
+    "href" : null,
+    "total" : 0
+  },
+  "href" : "https://api.spotify.com/v1/users/lichamnesia/playlists/77lqbJtRCW0QlLppBFsziA",
+  "id" : "77lqbJtRCW0QlLppBFsziA",
+  "images" : [ {
+    "height" : 640,
+    "url" : "https://i.scdn.co/image/4035f5cbd6817828e589e1722e6f5eb27cbaa924",
+    "width" : 640
+  } ],
+  "name" : "Chris's playlist",
+  "owner" : {
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/lichamnesia"
+    },
+    "href" : "https://api.spotify.com/v1/users/lichamnesia",
+    "id" : "lichamnesia",
+    "type" : "user",
+    "uri" : "spotify:user:lichamnesia"
+  },
+  "public" : true,
+  "snapshot_id" : "wRXAB6U7MBjQ6/N8OANjRExop/bCNDJzFbbmjcxW36E43DW2QO5EgHbBoBBl8Ps0",
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/users/lichamnesia/playlists/77lqbJtRCW0QlLppBFsziA/tracks?offset=0&limit=100",
+    "items" : [ {
+      "added_at" : "2016-12-03T23:02:58Z",
+      "added_by" : {
+        "external_urls" : {
+          "spotify" : "http://open.spotify.com/user/lichamnesia"
+        },
+        "href" : "https://api.spotify.com/v1/users/lichamnesia",
+        "id" : "lichamnesia",
+        "type" : "user",
+        "uri" : "spotify:user:lichamnesia"
+      },
+      "is_local" : false,
+      "track" : {
+        "album" : {
+          "album_type" : "single",
+          "artists" : [ {
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/artist/69GGBxA162lTqCwzJG5jLp"
+            },
+            "href" : "https://api.spotify.com/v1/artists/69GGBxA162lTqCwzJG5jLp",
+            "id" : "69GGBxA162lTqCwzJG5jLp",
+            "name" : "The Chainsmokers",
+            "type" : "artist",
+            "uri" : "spotify:artist:69GGBxA162lTqCwzJG5jLp"
+          } ],
+          "available_markets" : [ "CA", "MX", "US" ],
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/album/3OeA4rJ9XJNAygyNyTc2sI"
+          },
+          "href" : "https://api.spotify.com/v1/albums/3OeA4rJ9XJNAygyNyTc2sI",
+          "id" : "3OeA4rJ9XJNAygyNyTc2sI",
+          "images" : [ {
+            "height" : 640,
+            "url" : "https://i.scdn.co/image/4035f5cbd6817828e589e1722e6f5eb27cbaa924",
+            "width" : 640
+          }, {
+            "height" : 300,
+            "url" : "https://i.scdn.co/image/839d9bbe6a4e0bdcf63ec7f79fd73b28bf03885a",
+            "width" : 300
+          }, {
+            "height" : 64,
+            "url" : "https://i.scdn.co/image/6eeb6e5b2c7fabd939fd72fb6c499180c2198491",
+            "width" : 64
+          } ],
+          "name" : "#SELFIE",
+          "type" : "album",
+          "uri" : "spotify:album:3OeA4rJ9XJNAygyNyTc2sI"
+        },
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/69GGBxA162lTqCwzJG5jLp"
+          },
+          "href" : "https://api.spotify.com/v1/artists/69GGBxA162lTqCwzJG5jLp",
+          "id" : "69GGBxA162lTqCwzJG5jLp",
+          "name" : "The Chainsmokers",
+          "type" : "artist",
+          "uri" : "spotify:artist:69GGBxA162lTqCwzJG5jLp"
+        } ],
+        "available_markets" : [ "CA", "MX", "US" ],
+        "disc_number" : 1,
+        "duration_ms" : 183750,
+        "explicit" : false,
+        "external_ids" : {
+          "isrc" : "USDM31400016"
+        },
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/track/1HOlb9rdNOmy9b1Fakicjo"
+        },
+        "href" : "https://api.spotify.com/v1/tracks/1HOlb9rdNOmy9b1Fakicjo",
+        "id" : "1HOlb9rdNOmy9b1Fakicjo",
+        "name" : "#SELFIE",
+        "popularity" : 59,
+        "preview_url" : "https://p.scdn.co/mp3-preview/dca24a46b5797d7f0a954099dd5bfc764caaa634",
+        "track_number" : 1,
+        "type" : "track",
+        "uri" : "spotify:track:1HOlb9rdNOmy9b1Fakicjo"
+      }
+    } ],
+    "limit" : 100,
+    "next" : null,
+    "offset" : 0,
+    "previous" : null,
+    "total" : 1
+  },
+  "type" : "playlist",
+  "uri" : "spotify:user:lichamnesia:playlist:77lqbJtRCW0QlLppBFsziA"
+}
