@@ -6,6 +6,7 @@ import urllib
 import json
 import spotify
 from flask_pymongo import PyMongo
+from bson.json_util import dumps
 
 app = Flask(__name__)
 mongo = PyMongo(app)
@@ -44,6 +45,8 @@ auth_query_parameters = {
 
 @app.route('/')
 def homepage():
+    print(mongo.db.test.find_one())
+    print(dumps(mongo.db.test.find({'x':10}),{'_id'}))
     html = render_template('homepage.html')
     return html
 
