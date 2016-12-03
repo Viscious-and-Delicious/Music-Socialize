@@ -5,8 +5,10 @@ import base64
 import urllib
 import json
 import spotify
+from flask_pymongo import PyMongo
 
 app = Flask(__name__)
+mongo = PyMongo(app)
 
 #  Client Keys
 CLIENT_ID = "630b86f26d9e4839a970cc2057c7f5c5"
