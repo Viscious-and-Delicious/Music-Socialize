@@ -5,7 +5,6 @@ import base64
 import urllib
 import json
 import spotify
-<<<<<<< HEAD
 from flask_pymongo import PyMongo
 from bson.json_util import dumps
 
