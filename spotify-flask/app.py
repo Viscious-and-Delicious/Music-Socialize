@@ -1,18 +1,10 @@
-<<<<<<< HEAD
-from flask import render_template, Flask, redirect, request
-import json
-import base64
-import spotify
-import urllib
-import requests
-=======
 from flask import render_template, Flask, redirect, g, request
 import spotify
 import requests
 import base64
 import urllib
 import json
->>>>>>> lich
+import spotify
 
 app = Flask(__name__)
 
@@ -48,53 +40,7 @@ auth_query_parameters = {
 }
 
 
-@app.route('/')
-def homepage():
-    url_args = "&".join(["{}={}".format(key,urllib.quote(val)) for key,val in auth_query_parameters.iteritems()])
-    auth_url = "{}/?{}".format(SPOTIFY_AUTH_URL, url_args)
-    return redirect(auth_url)
-    #html = render_template('homepage.html')
-    #return html
 
-@app.route("/callback/q")
-def callback():
-    print 'call callback function'
-    # Auth Step 4: Requests refresh and access tokens
-    auth_token = request.args['code']
-    code_payload = {
-        "grant_type": "authorization_code",
-        "code": str(auth_token),
-        "redirect_uri": REDIRECT_URI
-    }
-    base64encoded = base64.b64encode("{}:{}".format(CLIENT_ID, CLIENT_SECRET))
-    headers = {"Authorization": "Basic {}".format(base64encoded)}
-    post_request = requests.post(SPOTIFY_TOKEN_URL, data=code_payload, headers=headers)
-
-    # Auth Step 5: Tokens are Returned to Application
-    response_data = json.loads(post_request.text)
-    access_token = response_data["access_token"]
-    refresh_token = response_data["refresh_token"]
-    token_type = response_data["token_type"]
-    expires_in = response_data["expires_in"]
-
-    # Auth Step 6: Use the access token to access Spotify API
-    authorization_header = {"Authorization":"Bearer {}".format(access_token)}
-
-    # Get profile data
-    user_profile_api_endpoint = "{}/me".format(SPOTIFY_API_URL)
-    profile_response = requests.get(user_profile_api_endpoint, headers=authorization_header)
-    profile_data = json.loads(profile_response.text)
-    print profile_data
-
-    # Get user playlist data
-    playlist_api_endpoint = "{}/playlists".format(profile_data["href"])
-    playlists_response = requests.get('https://api.spotify.com/v1/users/zhch6639/playlists', headers=authorization_header)
-    playlist_data = json.loads(playlists_response.text)
-    print playlists_response.json()
-    
-    # Combine profile and playlist data to display
-    display_arr = [profile_data] + playlist_data["items"]
-    return render_template("homepage.html",sorted_array=display_arr)
 
 @app.route('/login')
 def login():
