@@ -40,7 +40,10 @@ auth_query_parameters = {
 }
 
 
-
+@app.route('/')
+def homepage():
+    html = render_template('homepage.html')
+    return html
 
 @app.route('/login')
 def login():
