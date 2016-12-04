@@ -1,8 +1,8 @@
 #Usage
 
 To run this in localhost. You need to install requirements:
-$pip install requests
-$pip install Flask
+`$pip install requests`
+`$pip install Flask`
 $pip install PyMongo
 $pip install flask_pymongo
 $apt-get install mongodb
