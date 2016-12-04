@@ -50,53 +50,53 @@
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                    <a id="url1" href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="/static/img/cabin.png" class="img-responsive" alt="">
+                        <img id="img1" src="/static/img/cabin.png" class="img-responsive" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                    <a id="url2" href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="/static/img/cabin.png" class="img-responsive" alt="">
+                        <img id="img2" src="/static/img/cabin.png" class="img-responsive" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                    <a id="url3" href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="/static/img/cabin.png" class="img-responsive" alt="">
+                        <img id="img3" src="/static/img/cabin.png" class="img-responsive" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                    <a id="url4" href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="/static/img/cabin.png" class="img-responsive" alt="">
+                        <img id="img4" src="/static/img/cabin.png" class="img-responsive" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                    <a id="url5" href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="/static/img/cabin.png" class="img-responsive" alt="">
+                        <img id="img5" src="/static/img/cabin.png" class="img-responsive" alt="">
                     </a>
                 </div>
             </div>
@@ -113,7 +113,7 @@ var list = "{{ playlist }}".replace(/&#34;/g, '"');
 console.log(list);
 var playlist  = JSON.parse(list);
 for (var i = 0; i < playlist['playlist_id'].length; i ++){
-  document.getElementById('url' + i.toString()).href = '/playlist' + playlist['playlist_id'][i];
+  document.getElementById('url' + i.toString()).href = '/playlist/' + playlist['playlist_id'][i];
   document.getElementById('img' + i.toString()).src = playlist['images'][i];
 
 }

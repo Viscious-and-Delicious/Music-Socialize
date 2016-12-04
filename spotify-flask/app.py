@@ -231,26 +231,20 @@ def artist(id):
 def playlist(id):
     # print("USER_ID",user_id)
 
-    artist = spotify.get_artist(id)
     user_id = request.cookies.get('user')  
     # playlists = spotify.get_user_playlists(user_id)
     print("This page user_id",user_id)
-    if artist['images']:
-        image_url = artist['images'][0]['url']
-    else:
-        image_url = 'http://placecage.com/600/400'
+    # if artist['images']:
+    #     image_url = artist['images'][0]['url']
+    # else:
+    #     image_url = 'http://placecage.com/600/400'
 
-    tracksdata = spotify.get_artist_top_tracks(id)
-    tracks = tracksdata['tracks']
+    # tracksdata = spotify.get_artist_top_tracks(id)
+    # tracks = tracksdata['tracks']
 
-    artistsdata = spotify.get_related_artists(id)
-    relartists = artistsdata['artists']
-    html = render_template('artist.html',
-                            artist=artist,
-                            related_artists=relartists,
-                            image_url=image_url,
-                            tracks=tracks,
-                            user_id=user_id)
+    # artistsdata = spotify.get_related_artists(id)
+    # relartists = artistsdata['artists']
+    html = render_template('playlist.html')
     return html
 
 
