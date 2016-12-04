@@ -1,40 +1,37 @@
-# Music-Socialize
-
 
 #Inspiration
 
-According to what we searched there was not music application or there was no active music socializing application. So we wanted to come up with it. Something that can share other people's playlist and give feedback or leave comment.
+We wanted to implemnet music socialize website because accordingt to what we looked through there was  no active music socializing application. So we wanted to implment one. So that people can their playlist than other can give feedback. Also people can talk about music thtough the website. 
 
 
 #What it does
 
-At this point it is quite simple. Once you login to the page we can access other people's playlists. Also we can get top-ranked tracks from the spotify API.
+At this point it is quite simple. You can login to the page, and the person can access other people's playlists. Also we can know top-ranked tracks.
 
 #How we built it
 
-We used Spotify API, frontend Jinja2 and bootstrap, backend Flask, for database we implemented with MongoDB.
+We used Spotify API, for frontend Jinja2 and Bootstrap, for backend Flask, for database we used MongoDB.
 
 
 #Challenges we ran into
 
-Using the Spotify API was more complicated than exepcted. Because it will return a chunk of data and accessing and formating with JSON was quite challenging. 
+Using the Spotify API was complicated than we exepcted. Because it will return a big chunk of data and accessing the specific needed data and formating with JSON was quite challenging. 
 
 
 #Accomplishments that we are proud of
 
-We learned how to use Spotify API and also we are proud that we came up with this idea because it is quite new. Also
-we implemented main function in the limited time which is awsome!
+We learned how to use Spotify API and also we are proud that we came up with this idea because it is new. Also
+we implemented main function in the limited time which is great!
 
 
 #What we learned
 
-We leanred how to use Flask because we have not used it before it is simple and easy to implement. Also we learned how to use Spotify API and how to handle data in datase as well.
-
+We leanred how to use Flask because we had no prior experience and realized it is simple and easy to implement. Also we learned how to use Spotify API and how to handle data in datase as well.
 
 
 #To improve
 
-Since we want this web to serve a role for people to socialize such give feedback like how much they liked the shared playlist or leave comment on it, we plan to add chat or implement bulletin board so that people can talk.
+Since the purpose of this app is music socialization we want to implement a function that will allow people to leave comment or talk. Thay was people can give feedback on the shared playlist or talk about certain songs that they are interested in.
 
 #Built With
 
