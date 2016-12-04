@@ -7,7 +7,9 @@ import json
 import spotify
 from flask_pymongo import PyMongo
 from bson.json_util import dumps
+from bson.json_util import loads
 import time
+import collections
 
 app = Flask(__name__)
 mongo = PyMongo(app)
@@ -48,12 +50,33 @@ auth_query_parameters = {
 
 @app.route('/')
 def homepage():
-    print(mongo.db.test.find_one())
-    print(dumps(mongo.db.test.find({'x':10})))
+    # print(mongo.db.test.find_one())
+    # print(dumps(mongo.db.test.find({'x':10})))
 
     user_id = request.cookies.get('user')  
-    print(user_id)
-    html = render_template('homepage.html')
+    # print(user_id)
+    playlist = collections.defaultdict(list)
+    for play_list in mongo.db.playlist.find().limit(6):
+
+        print(play_list['playlist_id'], type(play_list['playlist_information']))
+        data = play_list['playlist_information']
+        # data = data.replace('\'','\"')
+        # data = data.replace('u\'','\'')
+        jsondata = json.loads(data.decode('string-escape').strip('"'))
+        print(type(jsondata))
+        print(jsondata['images'][0]['url'])
+        playlist['playlist_id'].append(play_list['playlist_id'])
+        playlist['images'].append(jsondata['images'][0]['url'])
+        # print(data['tracks'])
+    # play_list = 
+    # print(playlist)
+    print(playlist)
+    if playlist:
+        playlist = json.dumps(playlist)
+        print(type(playlist))
+        html = render_template('homepage.html', playlist=playlist)
+    else:
+        html = render_template('homepage.html')
     return html
 
 @app.route('/login')
@@ -85,7 +108,7 @@ def callback():
 
     # Auth Step 6: Use the access token to access Spotify API
     authorization_header = {"Authorization":"Bearer {}".format(access_token)}
-    print(authorization_header)
+    # print(authorization_header)
     # Get profile data
     user_profile_api_endpoint = "{}/me".format(SPOTIFY_API_URL)
     profile_response = requests.get(user_profile_api_endpoint, headers=authorization_header)
@@ -101,16 +124,16 @@ def callback():
     playlists_response = requests.get(playlist_api_endpoint, headers=authorization_header)
     #playlist_data = json.loads(playlists_response.text)
     playlist_data=playlists_response.json()
-    print(playlist_data)
+    # print(playlist_data)
 
-    print 'try to get playlist'
+    # print 'try to get playlist'
     playlist_item=playlist_data[u'items']
     playlist_ids=[]
     
     for item in playlist_item:
-        print item
+        # print item
         playlist_ids.append(item[u'external_urls'][u'spotify'].split('/')[-1])
-    print playlist_ids
+    # print playlist_ids
 
     playlist_track=[]
     playlist_file=open('playlist_file', 'w')
@@ -120,7 +143,7 @@ def callback():
         playlist_file.write(playlist_id+'\n')
         playlist=requests.get('https://api.spotify.com/v1/users/{id}/playlists/{id2}'.format(id=user_id, id2=playlist_id), headers=authorization_header)
         playlist_file.write(str(playlist.json())+'\n')
-        mongo.db.test.insert({'user_id':user_id,'playlist_id':playlist_id,'playlist_information':str(playlist.json())})
+        mongo.db.playlist.insert({'user_id':user_id,'playlist_id':playlist_id,'playlist_information':json.dumps(playlist.text)})
         #playlist_track.append(track_response.json())
     #print playlist_track
     #playlist_ite=playlist_data[u'items'][0][u'external_urls'][u'spotify']
@@ -130,8 +153,21 @@ def callback():
     
     # Combine profile and playlist data to display
     display_arr = [profile_data] + playlist_data["items"]
+    playlist = collections.defaultdict(list)
+    for play_list in mongo.db.playlist.find().limit(6):
+
+        print(play_list['playlist_id'], type(play_list['playlist_information']))
+        data = play_list['playlist_information']
+        # data = data.replace('\'','\"')
+        # data = data.replace('u\'','\'')
+        jsondata = json.loads(data.decode('string-escape').strip('"'))
+        print(type(jsondata))
+        print(jsondata['images'][0]['url'])
+        playlist['playlist_id'].append(play_list['playlist_id'])
+        playlist['images'].append(jsondata['images'][0]['url'])
     # res = Response("You have log in<a href='/'>Home page</a>")
-    res = make_response(render_template("homepage.html",sorted_array=display_arr, user_id=user_id))
+    playlist = json.dumps(playlist)
+    res = make_response(render_template("homepage.html",sorted_array=display_arr, user_id=user_id, playlist=playlist))
     res.set_cookie(key='user', value=user_id, expires=time.time()+6*60000)
     return res
     # return render_template("homepage.html",sorted_array=display_arr, user_id=user_id)
@@ -182,7 +218,7 @@ def playlist(id):
 
     artist = spotify.get_artist(id)
     user_id = request.cookies.get('user')  
-    playlists = spotify.get_user_playlists(user_id)
+    # playlists = spotify.get_user_playlists(user_id)
     print("This page user_id",user_id)
     if artist['images']:
         image_url = artist['images'][0]['url']

@@ -38,15 +38,15 @@
                     <hr class="star-primary">
                 </div>
             </div>
-            <div class="row">
+            <div id="pictures" class="row">
                 <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                    <a id="url0" href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="/static/img/cabin.png" class="img-responsive" alt="">
+                        <img id="img0" src="/static/img/cabin.png" class="img-responsive" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -102,5 +102,22 @@
             </div>
         </div>
     </section>
+
+<script type="text/javascript">  
+var list = "{{ playlist }}".replace(/&#34;/g, '"');
+// for (var i=0;i<list.length;i++)
+// {
+//   console.log(list[i]);
+// // document.write(list[i] + "<br>");
+// }
+console.log(list);
+var playlist  = JSON.parse(list);
+for (var i = 0; i < playlist['playlist_id'].length; i ++){
+  document.getElementById('url' + i.toString()).href = '/playlist' + playlist['playlist_id'][i];
+  document.getElementById('img' + i.toString()).src = playlist['images'][i];
+
+}
+
+</script>
 
 {% include 'partials/foot.html' %}
