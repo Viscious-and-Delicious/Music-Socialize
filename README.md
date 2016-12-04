@@ -1,4 +1,11 @@
+#Usage
 
+To run this in localhost. You need to install requirements:
+$pip install requests
+$pip install Flask
+$pip install PyMongo
+$pip install flask_pymongo
+$apt-get install mongodb
 #Inspiration
 
 We wanted to implemnet music socialize website because accordingt to what we looked through there was  no active music socializing application. So we wanted to implment one. So that people can their playlist than other can give feedback. Also people can talk about music thtough the website. 
