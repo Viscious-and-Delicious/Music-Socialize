@@ -48,6 +48,7 @@ auth_query_parameters = {
 
 @app.route('/')
 def homepage():
+    print 'homepage'
     print(mongo.db.test.find_one())
     print(dumps(mongo.db.test.find({'x':10})))
 
@@ -85,7 +86,7 @@ def callback():
 
     # Auth Step 6: Use the access token to access Spotify API
     authorization_header = {"Authorization":"Bearer {}".format(access_token)}
-    print(authorization_header)
+    #print(authorization_header)
     # Get profile data
     user_profile_api_endpoint = "{}/me".format(SPOTIFY_API_URL)
     profile_response = requests.get(user_profile_api_endpoint, headers=authorization_header)
@@ -101,16 +102,16 @@ def callback():
     playlists_response = requests.get(playlist_api_endpoint, headers=authorization_header)
     #playlist_data = json.loads(playlists_response.text)
     playlist_data=playlists_response.json()
-    print(playlist_data)
+    #print(playlist_data)
 
-    print 'try to get playlist'
+    #print 'try to get playlist'
     playlist_item=playlist_data[u'items']
     playlist_ids=[]
     
     for item in playlist_item:
-        print item
+        #print item
         playlist_ids.append(item[u'external_urls'][u'spotify'].split('/')[-1])
-    print playlist_ids
+    #print playlist_ids
 
     playlist_track=[]
     playlist_file=open('playlist_file', 'w')
@@ -120,14 +121,29 @@ def callback():
         playlist_file.write(playlist_id+'\n')
         playlist=requests.get('https://api.spotify.com/v1/users/{id}/playlists/{id2}'.format(id=user_id, id2=playlist_id), headers=authorization_header)
         playlist_file.write(str(playlist.json())+'\n')
-        mongo.db.test.insert({'user_id':user_id,'playlist_id':playlist_id,'playlist_information':str(playlist.json())})
+        mongo.db.test.insert({'user_id':user_id,'playlist_id':playlist_id,'playlist_information':json.dumps(playlist.text)})
+
         #playlist_track.append(track_response.json())
     #print playlist_track
     #playlist_ite=playlist_data[u'items'][0][u'external_urls'][u'spotify']
     
     #playlists=spotify.get_user_playlists(playlist_api_endpoint, authorization_header)
     #print playlists
-    
+    print ''
+    print 'playlist id'
+    #print mongo.db.test.find({playlist_id})
+    cur = mongo.db.test.find({}, {"playlist_information": 1, "_id": 0})
+
+    for doc in cur:
+        print ''
+        p2 = json.loads(str(doc[u'playlist_information']))
+        print type(p2)
+        print p2
+
+    #mongo.db.student.find({}, {playlist_id: 1, _id: 0}).pretty();
+
+
+
     # Combine profile and playlist data to display
     display_arr = [profile_data] + playlist_data["items"]
     # res = Response("You have log in<a href='/'>Home page</a>")
