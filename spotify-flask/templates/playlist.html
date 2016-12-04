@@ -5,16 +5,16 @@
 <section id="woz-content">
   <div class="container">
     <section class="sec">
-        <h1 class="page-title">{{artist}}</h1>
-          <a href="{{artist}}">
-                  {{artist}} on Spotify
+        <h1 class="page-title">{{playlist_name}}</h1>
+          <a href="{{url}}">
+                  {{playlist_name}} on Spotify
                 </a>
         <div class="row">
           <div class="col-sm-4">
 
 
             <section class="sec">
-                <img src="{{image_url}}" alt="{{image_url}}" class="img-fluid img-square">
+                <img src="{{img_url}}" alt="{{img_url}}" class="img-fluid img-square">
 
             </section>
 
@@ -59,4 +59,6 @@
     </section>
   </div>
 </section>
+
+
 {% include 'partials/foot.html' %}

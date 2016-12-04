@@ -58,7 +58,7 @@ def homepage():
     playlist = collections.defaultdict(list)
     for play_list in mongo.db.playlist.find().limit(6):
 
-        print(play_list['playlist_id'], type(play_list['playlist_information']))
+        # print(play_list['playlist_id'], type(play_list['playlist_information']))
         data = play_list['playlist_information']
         # data = data.replace('\'','\"')
         # data = data.replace('u\'','\'')
@@ -154,13 +154,13 @@ def callback():
     #playlists=spotify.get_user_playlists(playlist_api_endpoint, authorization_header)
     #print playlists
     #print mongo.db.test.find({playlist_id})
-    cur = mongo.db.test.find({}, {"playlist_information": 1, "_id": 0})
+    # cur = mongo.db.test.find({}, {"playlist_information": 1, "_id": 0})
 
-    for doc in cur:
-        print ''
-        p2 = json.loads(str(doc[u'playlist_information']))
-        print type(p2)
-        print p2
+    # for doc in cur:
+    #     print ''
+    #     p2 = json.loads(str(doc[u'playlist_information']))
+    #     print type(p2)
+    #     print p2
 
     #mongo.db.student.find({}, {playlist_id: 1, _id: 0}).pretty();
 
@@ -227,8 +227,8 @@ def artist(id):
 
 
 
-@app.route('/playlist/<id>')
-def playlist(id):
+@app.route('/playlist/<playlist_id>')
+def playlist(playlist_id):
     # print("USER_ID",user_id)
 
     user_id = request.cookies.get('user')  
@@ -244,7 +244,29 @@ def playlist(id):
 
     # artistsdata = spotify.get_related_artists(id)
     # relartists = artistsdata['artists']
-    html = render_template('playlist.html')
+    playlist = collections.defaultdict(list)
+    print(playlist_id)
+    the_play_list = mongo.db.playlist.find_one({'playlist_id': playlist_id})
+    # print(the_play_list)
+    data = the_play_list['playlist_information']
+    jsondata = json.loads(data.decode('string-escape').strip('"'))
+    print("img: ",jsondata['images'][0]['url'])
+    img_url = jsondata['images'][0]['url']
+    # res = Response("You have log in<a href='/'>Home page</a>")
+    # print(jsondata)
+    playlist_name = jsondata['name']
+    tracks = jsondata['tracks']['items']
+    url = jsondata['external_urls']['spotify']
+    print(tracks)
+    for t in tracks:
+        print(t)
+    # print(type(tracks))
+    html = render_template('playlist.html',
+                            img_url=img_url,
+                            playlist_name=playlist_name,
+                            tracks=tracks,
+                            url=url,
+                            user_id=user_id)
     return html
 
 

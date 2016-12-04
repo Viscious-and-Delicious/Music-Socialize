@@ -9,16 +9,16 @@
         <tr class="track">
           <td>
               <div class="track-info">
-                <span class="track-name">{{ t.track.name }}</span>
+                <span class="track-name">{{ t.name }}</span>
                 <span class="album-name">
-                  <a href="{{t.track.album.external_urls.spotify}}">
-                      {{ t.track.name }}
+                  <a href="{{t.album.external_urls.spotify}}">
+                      {{ t.name }}
                   </a>
                 </span>
               </div>
-              <audio src="{{ t.track.preview_url }}" preload="auto" />
+              <audio src="{{ t.preview_url }}" preload="auto" />
           </td>
-          <td class="number">{{ t.track.popularity }}</td>
+          <td class="number">{{ t.popularity }}</td>
         </tr>
     {% endfor %}
 
