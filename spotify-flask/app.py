@@ -50,8 +50,8 @@ auth_query_parameters = {
 
 @app.route('/')
 def homepage():
-    # print(mongo.db.test.find_one())
-    # print(dumps(mongo.db.test.find({'x':10})))
+    print(mongo.db.test.find_one())
+    print(dumps(mongo.db.test.find({'x':10})))
 
     user_id = request.cookies.get('user')  
     # print(user_id)
@@ -108,7 +108,7 @@ def callback():
 
     # Auth Step 6: Use the access token to access Spotify API
     authorization_header = {"Authorization":"Bearer {}".format(access_token)}
-    # print(authorization_header)
+    #print(authorization_header)
     # Get profile data
     user_profile_api_endpoint = "{}/me".format(SPOTIFY_API_URL)
     profile_response = requests.get(user_profile_api_endpoint, headers=authorization_header)
@@ -127,13 +127,16 @@ def callback():
     # print(playlist_data)
 
     # print 'try to get playlist'
+    #print(playlist_data)
+
+    #print 'try to get playlist'
     playlist_item=playlist_data[u'items']
     playlist_ids=[]
     
     for item in playlist_item:
         # print item
         playlist_ids.append(item[u'external_urls'][u'spotify'].split('/')[-1])
-    # print playlist_ids
+        #print item
 
     playlist_track=[]
     playlist_file=open('playlist_file', 'w')
@@ -150,7 +153,19 @@ def callback():
     
     #playlists=spotify.get_user_playlists(playlist_api_endpoint, authorization_header)
     #print playlists
-    
+    #print mongo.db.test.find({playlist_id})
+    cur = mongo.db.test.find({}, {"playlist_information": 1, "_id": 0})
+
+    for doc in cur:
+        print ''
+        p2 = json.loads(str(doc[u'playlist_information']))
+        print type(p2)
+        print p2
+
+    #mongo.db.student.find({}, {playlist_id: 1, _id: 0}).pretty();
+
+
+
     # Combine profile and playlist data to display
     display_arr = [profile_data] + playlist_data["items"]
     playlist = collections.defaultdict(list)
