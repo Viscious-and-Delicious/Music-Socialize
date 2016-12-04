@@ -104,8 +104,8 @@ def callback():
     playlist_file.write('\n')
     for playlist_id in playlist_ids:
         playlist_file.write(playlist_id+'\n')
-        playlist=requests.get('https://api.spotify.com/v1/users/{id}/playlists/{id2}'.format(id=user_id, id2=playlist_id), headers=authorization_header)
-        playlist_file.write(str(playlist.json())+'\n')
+        playlist=requests.get('https://api.spotify.com/v1/users/{id}/playlists/{id2}'.format(id=user_id, id2=play
+mongo.db.test.insert({'user_id':user_id,'playlist_id':playlist_id,'playlist_information':str(playlist.json())})
         #playlist_track.append(track_response.json())
     #print playlist_track
     #playlist_ite=playlist_data[u'items'][0][u'external_urls'][u'spotify']
